@@ -64,4 +64,11 @@ st.sidebar.subheader("Total Penyewaan Sepeda")
 total_rentals = filtered_df['cnt'].sum()
 st.sidebar.write(f"Total Penyewaan: {total_rentals}")
 
+# Section for Conclusion
+st.subheader("Kesimpulan")
+st.write("""
+1. Pada eksplor data tersebut dapat dilihat bahwa cuaca yang dirasakan dapat berpengaruh pada jumlah peminjaman sepeda baik registed, casual, maupu total seluruh peminjaman sepeda. Pada data terlihat bahwa pada cuaca cerah terdapat paling banyak peminjaman sepeda
+2. Pada eksplor data tersebut dapat dilihat bahwa disaat hari kerja terdapat banyak peminjam dibanding dengan hari libur.
+""")
+
 st.caption('Copyright (c), created by Febrisa Eka Nur Patricia')
