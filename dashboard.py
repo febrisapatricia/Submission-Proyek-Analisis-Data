@@ -30,15 +30,6 @@ st.dataframe(day_df.head())
 st.subheader("Overview")
 st.write("Data ini menunjukkan jumlah penyewa sepeda per hari, berikut faktor cuaca, suhu, kelembaban, dan informasi lain.")
 
-# Visualize total bike rentals by working day (Workingday: 1 = Hari Kerja, 0 = Hari Libur)
-st.subheader("Perbandingan Penggunaan Sepeda: Hari Kerja vs Hari Libur")
-fig, ax = plt.subplots(figsize=(10, 6))
-sns.barplot(x='workingday', y='cnt', data=day_df, estimator=sum, palette='Set2', ax=ax)
-ax.set_title('Perbandingan Penggunaan Sepeda: Hari Kerja vs Hari Libur', fontsize=16)
-ax.set_xlabel('Hari Libur vs Hari Kerja', fontsize=12)
-ax.set_ylabel('Total Penggunaan Sepeda', fontsize=12)
-st.pyplot(fig)
-
 # Section for Weather Effects on Bike Rentals
 st.subheader("Pengaruh Cuaca Terhadap Penggunaan Sepeda")
 fig, ax = plt.subplots(figsize=(10, 6))
@@ -48,12 +39,12 @@ ax.set_xlabel('Situasi Cuaca', fontsize=12)
 ax.set_ylabel('Total Penggunaan Sepeda', fontsize=12)
 st.pyplot(fig)
 
-# Section for Temperature Effects on Bike Rentals
-st.subheader("Pengaruh Suhu Terhadap Penggunaan Sepeda")
+# Visualize total bike rentals by working day (Workingday: 1 = Hari Kerja, 0 = Hari Libur)
+st.subheader("Perbandingan Penggunaan Sepeda: Hari Kerja vs Hari Libur")
 fig, ax = plt.subplots(figsize=(10, 6))
-sns.scatterplot(x='temp', y='cnt', data=day_df, palette='coolwarm', ax=ax)
-ax.set_title('Pengaruh Suhu Terhadap Penggunaan Sepeda', fontsize=16)
-ax.set_xlabel('Suhu Normalisasi', fontsize=12)
+sns.barplot(x='workingday', y='cnt', data=day_df, estimator=sum, palette='Set2', ax=ax)
+ax.set_title('Perbandingan Penggunaan Sepeda: Hari Kerja vs Hari Libur', fontsize=16)
+ax.set_xlabel('Hari Libur vs Hari Kerja', fontsize=12)
 ax.set_ylabel('Total Penggunaan Sepeda', fontsize=12)
 st.pyplot(fig)
 
