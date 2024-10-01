@@ -21,7 +21,7 @@ st.markdown("---")
 # Title and Subheaders for the Dashboard
 st.title("Bike Sharing Analysis")
 st.markdown("---")
-st.subheader("DataFrame Jumlah Penyewa Sepeda")
+st.subheader("Dataset Jumlah Penyewa Sepeda")
 
 # Display DataFrame in Streamlit
 st.dataframe(day_df.head())
