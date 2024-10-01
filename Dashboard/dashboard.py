@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
-from matplotlib.gridspec import GridSpec
 
 # Set the style for Seaborn plots
 sns.set(style='dark')
