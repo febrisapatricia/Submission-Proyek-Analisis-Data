@@ -29,7 +29,7 @@ st.dataframe(day_df.head())
 # Section for Weather Effects on Bike Rentals
 st.subheader("Pengaruh Cuaca Terhadap Penggunaan Sepeda")
 fig, ax = plt.subplots(figsize=(10, 6))
-sns.barplot(x='weathersit', y='cnt', data=day_df, estimator=sum, palette='Set1', ax=ax)
+sns.barplot(x='weathersit', y='cnt', data=day_df, estimator=sum, palette='Set2', ax=ax)
 ax.set_title('Pengaruh Cuaca Terhadap Penggunaan Sepeda', fontsize=16)
 ax.set_xlabel('Situasi Cuaca', fontsize=12)
 ax.set_ylabel('Total Penggunaan Sepeda', fontsize=12)
