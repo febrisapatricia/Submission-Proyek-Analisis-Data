@@ -26,10 +26,6 @@ st.subheader("Dataset Jumlah Penyewa Sepeda")
 # Display DataFrame in Streamlit
 st.dataframe(day_df.head())
 
-# Section for Data Overview
-st.subheader("Overview")
-st.write("Data ini menunjukkan jumlah penyewa sepeda per hari, berikut faktor cuaca, suhu, kelembaban, dan informasi lain.")
-
 # Section for Weather Effects on Bike Rentals
 st.subheader("Pengaruh Cuaca Terhadap Penggunaan Sepeda")
 fig, ax = plt.subplots(figsize=(10, 6))
