@@ -10,7 +10,7 @@ from matplotlib.gridspec import GridSpec
 sns.set(style='dark')
 
 # Load dataset
-day_df = pd.read_csv("day_data.csv")
+day_df = pd.read_csv("Dashboard/day_data.csv")
 
 # Set page configuration for Streamlit
 st.set_page_config(page_title="BIKERS",
@@ -66,3 +66,4 @@ st.write("""
 2. Pada eksplor data tersebut dapat dilihat bahwa disaat hari kerja terdapat banyak peminjam dibanding dengan hari libur.
 """)
 st.caption('Copyright (c), created by Febrisa Eka Nur Patricia')
+
